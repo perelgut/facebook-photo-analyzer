@@ -7,12 +7,12 @@ declared-services:
     label: visual_recognition
     plan: free
 applications:
-- name: facebook-photo-analyzer
+- name: SP-fb-photo-analyzer
   framework: node
   runtime: node12
   memory: 256M
   instances: 1
-  host: facebook-photo-analyzer
+  host: SP-fb-photo-analyzer
   path: .
   command: node app.js
   services:
